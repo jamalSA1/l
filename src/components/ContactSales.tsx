@@ -28,9 +28,9 @@ export default function ContactSales({ fadeIn }: ContactSalesProps) {
 
       <div className="max-w-4xl mx-auto px-12 relative z-10 text-center space-y-16">
         <motion.div {...fadeIn} className="space-y-6">
-          <span className="text-[12px] font-black tracking-[0.15em] text-pink-500 uppercase block">
+          <p className="text-[12px] font-black tracking-[0.15em] text-pink-500 uppercase block">
             هل تودين الحصول على تجربة مخصصة؟
-          </span>
+          </p>
           <h2 className="text-5xl md:text-7xl font-medium tracking-tighter leading-tight text-black">
             دعينا نساعدكِ في <br /> اختيار الأنسب لجمالكِ
           </h2>
@@ -50,7 +50,7 @@ export default function ContactSales({ fadeIn }: ContactSalesProps) {
             href="mailto:sales@seamakeup.com"
             className="group relative px-12 py-6 bg-black text-white rounded-full text-xs font-black uppercase tracking-[0.2em] overflow-hidden transition-all hover:scale-105"
           >
-            <span className="relative z-10">تحدثي مع المبيعات</span>
+            <p className="relative z-10">تحدثي مع المبيعات</p>
             <div className="absolute inset-0 bg-pink-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
           </a>
         </motion.div>

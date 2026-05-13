@@ -39,9 +39,9 @@ export default function Hero({ benefits }: HeroProps) {
           className="md:col-span-12 space-y-12 z-10 pt-20 flex flex-col items-center text-center"
         >
           <div className="space-y-6 max-w-2xl mx-auto">
-            <span className="text-[16px] font-medium tracking-tight text-gray-500 block">
+            <p className="text-[16px] font-medium tracking-tight text-gray-500 block">
               عناية عصرية بشيخوخة الشفاه
-            </span>
+            </p>
             <h1 className="text-6xl md:text-[85px] font-bold tracking-tighter leading-[0.95] text-black">
               سحر الببتيدات لشفاه ممتلئة
             </h1>
