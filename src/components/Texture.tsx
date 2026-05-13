@@ -47,7 +47,7 @@ export default function Texture({ fadeIn }: TextureProps) {
                 <div className="text-4xl font-display font-bold tracking-tighter">
                   {stat.val}
                 </div>
-                <div className="text-[10px] font-bold tracking-widest text-gray-300 uppercase">
+                <div className="text-[10px] font-bold text-gray-300 uppercase">
                   {stat.label}
                 </div>
               </div>

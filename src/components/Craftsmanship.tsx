@@ -34,7 +34,7 @@ export default function Craftsmanship({
             تصل لكل زاوية من شفتيكِ بسهولة مطلقة.
           </p>
           <div className="flex gap-4">
-            <button className="bg-black text-white px-10 py-5 rounded-full text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-black/10">
+            <button className="bg-black text-white px-10 py-5 rounded-full text-[10px] font-black uppercase hover:scale-105 transition-all shadow-xl shadow-black/10">
               اكتشف المزيد
             </button>
           </div>

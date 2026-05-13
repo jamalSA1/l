@@ -48,14 +48,14 @@ export default function ContactSales({ fadeIn }: ContactSalesProps) {
         >
           <a
             href="mailto:sales@seamakeup.com"
-            className="group relative px-12 py-6 bg-black text-white rounded-full text-xs font-black uppercase tracking-[0.2em] overflow-hidden transition-all hover:scale-105"
+            className="group relative px-12 py-6 bg-black text-white rounded-full text-xs font-black uppercase overflow-hidden transition-all hover:scale-105"
           >
             <p className="relative z-10">تحدثي مع المبيعات</p>
             <div className="absolute inset-0 bg-pink-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
           </a>
         </motion.div>
 
-        <div className="pt-20 flex justify-center gap-12 text-[10px] font-bold text-gray-300 tracking-widest uppercase">
+        <div className="pt-20 flex justify-center gap-12 text-[10px] font-bold text-gray-300 uppercase">
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 bg-pink-400 rounded-full" />
             استجابة خلال 24 ساعة

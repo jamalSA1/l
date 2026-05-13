@@ -55,7 +55,7 @@ export default function Hero({ benefits }: HeroProps) {
           <div className="pt-20 w-full flex flex-col items-center">
             <div className="flex items-center gap-4 mb-12 max-w-4xl w-full">
               <div className="h-[1px] flex-grow bg-gray-200" />
-              <h2 className="text-[18px] font-bold text-black uppercase tracking-wider shrink-0">
+              <h2 className="text-[18px] font-bold text-black uppercase shrink-0">
                 المميزات
               </h2>
               <div className="h-[1px] flex-grow bg-gray-200" />
