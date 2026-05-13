@@ -20,6 +20,10 @@ interface HeroProps {
 export default function Hero({ benefits }: HeroProps) {
   return (
     <section className="relative min-h-screen flex flex-col pt-40 pb-32 overflow-hidden bg-white">
+      {/* Decorative Glowing Elements */}
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] aspect-square bg-pink-100/40 rounded-full blur-[120px] animate-pulse" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] aspect-square bg-pink-50/50 rounded-full blur-[120px] animate-pulse [animation-delay:2s]" />
+
       {/* Background Image - Absolute position covering full section */}
       <div className="absolute inset-0 pointer-events-none">
         <img
@@ -65,7 +69,14 @@ export default function Hero({ benefits }: HeroProps) {
               {/* First row of benefits: 1, 2, 3 */}
               <div className="grid grid-cols-3 gap-8 mb-16 relative">
                 {[benefits[0], benefits[1], benefits[2]].map((benefit, idx) =>
-                  <div key={benefit.id} className="relative group">
+                  <motion.div
+                    key={benefit.id}
+                    className="relative group"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: idx * 0.2 }}
+                  >
                     <div className="flex flex-col items-center text-center space-y-4">
                       <div className="w-6 h-6 rounded-full bg-black text-white text-[10px] font-bold flex items-center justify-center">
                         {benefit.id}
@@ -83,16 +94,20 @@ export default function Hero({ benefits }: HeroProps) {
                       <div className="absolute top-3 -right-4 text-gray-200 text-[10px]">
                         ★
                       </div>}
-                  </div>
+                  </motion.div>
                 )}
               </div>
 
               {/* Second row of benefits: 4, 5 staggered */}
               <div className="flex justify-center gap-24 relative">
                 {[benefits[3], benefits[4]].map((benefit, idx) =>
-                  <div
+                  <motion.div
                     key={benefit.id}
                     className="relative group max-w-[180px]"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: (idx + 3) * 0.2 }}
                   >
                     <div className="flex flex-col items-center text-center space-y-4">
                       <div className="w-6 h-6 rounded-full bg-black text-white text-[10px] font-bold flex items-center justify-center">
@@ -111,7 +126,7 @@ export default function Hero({ benefits }: HeroProps) {
                       <div className="absolute top-3 -right-12 text-gray-200 text-[10px]">
                         ★
                       </div>}
-                  </div>
+                  </motion.div>
                 )}
               </div>
             </div>

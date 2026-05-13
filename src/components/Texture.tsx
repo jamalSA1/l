@@ -15,7 +15,10 @@ export default function Texture({ fadeIn }: TextureProps) {
     <section className="py-32 bg-[#fafafa]">
       <div className="max-w-7xl mx-auto px-12 grid md:grid-cols-2 gap-24 items-center">
         <motion.div
-          {...fadeIn}
+          initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
+          whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           className="relative aspect-square overflow-hidden rounded-[80px] shadow-3xl"
         >
           <img

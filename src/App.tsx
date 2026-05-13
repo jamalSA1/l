@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useScroll } from "motion/react";
+import { useScroll, motion, useSpring } from "motion/react";
 import { useRef } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -11,12 +11,19 @@ import Texture from "./components/Texture";
 import Craftsmanship from "./components/Craftsmanship";
 import ContactSales from "./components/ContactSales";
 import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCursor";
 
 export default function App() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
+  });
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
   });
 
   const fadeIn = {
@@ -65,6 +72,11 @@ export default function App() {
       className="min-h-screen bg-white text-[#0a0a0a] font-sans selection:bg-pink-100 selection:text-pink-900"
       dir="rtl"
     >
+      <CustomCursor />
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-pink-500 origin-[100%] z-[100]"
+        style={{ scaleX }}
+      />
       <Navbar />
       <main ref={containerRef} className="overflow-hidden">
         <Hero benefits={benefits} />

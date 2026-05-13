@@ -3,12 +3,24 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Instagram, Twitter, Youtube, Send } from "lucide-react";
+import { Instagram, Twitter, Youtube, Send, ArrowUp } from "lucide-react";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <footer className="py-32 bg-white px-8 border-t border-black/5">
+    <footer className="py-32 bg-white px-8 border-t border-black/5 relative">
       <div className="max-w-7xl mx-auto flex flex-col items-center space-y-16">
+        {/* Back to Top Button */}
+        <button
+          onClick={scrollToTop}
+          className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors shadow-xl group"
+        >
+          <ArrowUp size={20} className="group-hover:-translate-y-1 transition-transform" />
+        </button>
+
         <div className="text-5xl font-display font-black uppercase italic opacity-10">
           Sea Makeup
         </div>
