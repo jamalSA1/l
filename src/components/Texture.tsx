@@ -4,6 +4,7 @@
  */
 
 import { motion } from "motion/react";
+import textureImg from "../assets/images/input_file_1.png";
 
 interface TextureProps {
   fadeIn: any;
@@ -18,7 +19,7 @@ export default function Texture({ fadeIn }: TextureProps) {
           className="relative aspect-square overflow-hidden rounded-[80px] shadow-3xl"
         >
           <img
-            src="/src/assets/images/input_file_1.png"
+            src={textureImg}
             alt="Texture Close-up"
             className="w-full h-full object-cover scale-110 hover:scale-100 transition-transform duration-[3s]"
           />
@@ -34,9 +35,8 @@ export default function Texture({ fadeIn }: TextureProps) {
             </h2>
           </div>
           <p className="text-xl text-gray-500 font-serif leading-relaxed italic">
-            "لقد صممنا Sea Makeup ليكون رفيقكِ الدائم. تركيبتنا لا تكتفي
-            بصبغ الشفاه، بل تعالجها من العمق باستخدام تقنيات بلمبليكس
-            المتقدمة."
+            "لقد صممنا Sea Makeup ليكون رفيقكِ الدائم. تركيبتنا لا تكتفي بصبغ
+            الشفاه، بل تعالجها من العمق باستخدام تقنيات بلمبليكس المتقدمة."
           </p>
           <div className="flex gap-16 border-t border-black/5 pt-12">
             {[

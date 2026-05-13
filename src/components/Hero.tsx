@@ -4,6 +4,7 @@
  */
 
 import { motion } from "motion/react";
+import bgHero from "../assets/images/input_file_2.png";
 
 interface Benefit {
   id: string;
@@ -22,7 +23,7 @@ export default function Hero({ benefits }: HeroProps) {
       {/* Background Image - Absolute position covering full section */}
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="/src/assets/images/input_file_2.png"
+          src={bgHero}
           alt="Background texture"
           className="w-full h-full object-cover opacity-30"
         />

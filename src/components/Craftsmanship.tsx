@@ -4,6 +4,7 @@
  */
 
 import { motion, useTransform, MotionValue } from "motion/react";
+import craftsmanshipImg from "../assets/images/input_file_3.png";
 
 interface CraftsmanshipProps {
   fadeIn: any;
@@ -52,7 +53,7 @@ export default function Craftsmanship({
             initial={{ y: 0 }}
             animate={{ y: [-15, 15, -15] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            src="/src/assets/images/input_file_3.png"
+            src={craftsmanshipImg}
             alt="Product Assembly"
             className="w-full max-w-[500px] drop-shadow-[0_40px_50px_rgba(255,182,193,0.3)] relative z-10 transition-transform rounded-[80px] duration-700 group-hover:scale-105"
           />

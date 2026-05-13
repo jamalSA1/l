@@ -4,6 +4,7 @@
  */
 
 import { motion } from "motion/react";
+import bgContact from "../assets/images/input_file_4.png";
 
 interface ContactSalesProps {
   fadeIn: any;
@@ -18,7 +19,7 @@ export default function ContactSales({ fadeIn }: ContactSalesProps) {
       {/* Background Image - Matching Section 1 style exactly */}
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="/src/assets/images/input_file_4.png"
+          src={bgContact}
           alt="Background texture"
           className="w-full h-full object-cover opacity-30"
         />
