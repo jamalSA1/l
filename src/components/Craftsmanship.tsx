@@ -23,11 +23,9 @@ export default function Craftsmanship({
         <motion.div {...fadeIn} className="space-y-8">
           <div className="inline-flex items-center gap-6">
             <div className="w-12 h-[1px] bg-black/20" />
-            <p className="text-[10px] font-black tracking-[0.15em] text-black">
-              إتقان الصنع
-            </p>
+            <p className="text-[10px] font-black text-black">إتقان الصنع</p>
           </div>
-          <h2 className="text-5xl font-medium tracking-tighter leading-tight">
+          <h2 className="text-5xl font-medium leading-tight">
             دقة تليق <br /> بجمالك الفريد
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed">

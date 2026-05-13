@@ -27,10 +27,10 @@ export default function Texture({ fadeIn }: TextureProps) {
         </motion.div>
         <motion.div {...fadeIn} className="space-y-12">
           <div className="space-y-6">
-            <p className="text-[10px] font-black tracking-[0.15em] text-pink-600 uppercase block">
+            <p className="text-[10px] font-black text-pink-600 uppercase block">
               إثبات علمي
             </p>
-            <h2 className="text-6xl font-medium tracking-tighter leading-tight">
+            <h2 className="text-6xl font-medium leading-tight">
               عناية مكثفة <br /> بلمسة زجاجية
             </h2>
           </div>

@@ -39,13 +39,13 @@ export default function Hero({ benefits }: HeroProps) {
           className="md:col-span-12 space-y-12 z-10 pt-20 flex flex-col items-center text-center"
         >
           <div className="space-y-6 max-w-2xl mx-auto">
-            <p className="text-[16px] font-medium tracking-tight text-gray-500 block">
+            <p className="text-[16px] font-medium text-gray-500 block">
               عناية عصرية بشيخوخة الشفاه
             </p>
-            <h1 className="text-6xl md:text-[85px] font-bold tracking-tighter leading-[0.95] text-black">
+            <h1 className="text-6xl md:text-[85px] font-bold leading-[0.95] text-black">
               سحر الببتيدات لشفاه ممتلئة
             </h1>
-            <p className="text-[15px] text-gray-400 font-medium tracking-tight mx-auto">
+            <p className="text-[15px] text-gray-400 font-medium mx-auto">
               مزيج من مكونات العناية الراقية بالبشرة لترطيب وتبريد ومقاومة
               الأكسدة في منتج واحد 3 في 1
             </p>
