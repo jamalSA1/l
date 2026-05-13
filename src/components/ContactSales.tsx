@@ -28,7 +28,7 @@ export default function ContactSales({ fadeIn }: ContactSalesProps) {
 
       <div className="max-w-4xl mx-auto px-12 relative z-10 text-center space-y-16">
         <motion.div {...fadeIn} className="space-y-6">
-          <span className="text-[12px] font-black tracking-[0.4em] text-pink-500 uppercase block">
+          <span className="text-[12px] font-black tracking-[0.15em] text-pink-500 uppercase block">
             هل تودين الحصول على تجربة مخصصة؟
           </span>
           <h2 className="text-5xl md:text-7xl font-medium tracking-tighter leading-tight text-black">

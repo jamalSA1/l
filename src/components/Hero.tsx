@@ -25,7 +25,7 @@ export default function Hero({ benefits }: HeroProps) {
         <img
           src={bgHero}
           alt="Background texture"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-contain md:object-cover opacity-20 md:opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/40 to-white/90" />
       </div>

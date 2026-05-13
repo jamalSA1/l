@@ -23,7 +23,7 @@ export default function Craftsmanship({
         <motion.div {...fadeIn} className="space-y-8">
           <div className="inline-flex items-center gap-6">
             <div className="w-12 h-[1px] bg-black/20" />
-            <span className="text-[10px] font-black tracking-[0.4em] text-black">
+            <span className="text-[10px] font-black tracking-[0.15em] text-black">
               إتقان الصنع
             </span>
           </div>
